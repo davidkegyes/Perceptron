@@ -7,9 +7,7 @@ import java.awt.event.WindowEvent;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @author david.kegyes@p4b.ro
- */
+
 public class PerceptronWindow extends Canvas {
 
     private static int WIDTH = 400;
@@ -19,21 +17,11 @@ public class PerceptronWindow extends Canvas {
 
     public PerceptronWindow(String title) throws HeadlessException {
         super();
-//        this.canvas = new Canvas();
-//        this.canvas.setBackground(new Color(50, 100, 250));
-//        this.canvas.setPreferredSize(new Dimension(WIDTH, HEIGHT));
-//        this.add(canvas, BorderLayout.CENTER);
-//        this.pack();
         this.setBackground(Color.white);
         JFrame frame = new JFrame(title);
         frame.add(this);
         frame.pack();
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-//        frame.addWindowListener(new WindowAdapter() {
-//            public void windowClosing(WindowEvent e) {
-//                System.exit(0);
-//            }
-//        });
         frame.setVisible(true);
     }
 
